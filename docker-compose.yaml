@@ -1,4 +1,4 @@
-name: example # define the name of the app
+name: overseer # define the name of the app
 
 services: # define services
   app: # main Python app
@@ -8,7 +8,7 @@ services: # define services
       - bot-token
       - bot-config
     environment: # pass location of secrets to the container
-      EXAMPLE_CONFIG_FILE: /run/secrets/bot-config
+      OVERSEER_CONFIG_FILE: /run/secrets/bot-config
 
 secrets:
   bot-token:
